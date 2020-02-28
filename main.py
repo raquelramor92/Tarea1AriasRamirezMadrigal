@@ -1,16 +1,16 @@
 def min_may(string): #Cambia minuscula por mayuscula
   palabra=""
   if not isinstance(string,str):
-     return "error 1"
+     return "error 1" #no es el tipo de dato que recibe la función
   for x in string:
     if ord(x)<65:
-     return "error 2"
-    elif ord(x)<91:
+     return "error 2" #es el tipo de dato que recibe la función pero no es una letra adecuada
+    elif ord(x)>90 and ord(x)<97:
       return "error 2"
-    elif ord(x)<97:
-     return "error 2"
     elif ord(x)>122:
       return "error 2"
+    elif ord(x)>65 and ord(x)<91
+      return "error 3" #es el tipo de dato que recibe la función, pero es una mayúscula
     else:
       num=ord(x)-32
       letra=chr(num)
